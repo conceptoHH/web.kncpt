@@ -1,0 +1,211 @@
+body {
+    font-family:'Montserrat' ;
+    background: linear-gradient(-45deg,  #f3f1f4 0%, #d0e4fc 100%, #d3e0fd 50%, #000000 50%);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a{
+    text-decoration: none;
+}
+.barra-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+.logo{
+    width: 200px;
+    height: auto;
+}
+.barra-nav a {
+    color: #000;
+}
+
+.enlaces{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+.enlaces a {
+    display: flex;  
+    align-items: center;
+    color: #000;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 6px 4px 0px rgba(0, 0, 0, 1);
+
+}
+.enlaces a:hover {
+    background-color:rgb(193, 190, 190) ;
+}
+
+main {
+    height: auto;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+}
+
+
+.principal{
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 6px 4px 0px rgba(0, 0, 0, 1);
+}
+
+
+.contenido__parrafo{
+    text-align: justify;
+    font-size: 22px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes_conte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.redes_conte:hover {
+    background-color: rgb(193, 190, 190);
+}
+
+.imagen {
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 6px 4px 0px rgba(0, 0, 0, 1);
+
+}
+.imagen_redes {
+    width: 20%;
+    height: auto;
+}
+.imagen_home {
+    width: 50%;
+    height: auto;
+}
+
+.imagen--logo {
+    width: 100%;
+    height: auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.campo_label {
+    flex: 0 0 90px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.campo_field {
+    flex: 0 0 400px;
+    border: 2px solid gray;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    background-color: #000;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .barra-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagen {
+    width: 50%;
+  }
+
+  .contenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* START: Added styles for the form */
+  .formulario {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    margin: 0 auto;
+  }
+
+  .campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Make label and field align */
+  }
+
+  .campo_label {
+    text-align: left; /* Align label text to the left */
+    padding-right: 0;
+    margin-bottom: -2.5rem; /* Add space below the label */
+  }
+
+  .campo_field {
+    flex: 1; /* Allow field to take up available space */
+    width: 100%; /* Make the field take the full width */
+  }
+
+   .campo_field--textarea {
+    flex: 0 0 10rem;/* Puedes ajustar este valor como prefieras */
+  }
+  /* END: Added styles for the form */
+}
