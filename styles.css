@@ -46,7 +46,7 @@ a{
 
 }
 .enlaces a {
-    display: flex;  
+    display: flex;
     align-items: center;
     color: #000;
     height: 50px;
@@ -158,6 +158,10 @@ footer {
     height: 64px;
     background-color: #000;
     color: white;
+    position: fixed;
+    bottom 0;
+    left 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 500px) {
